@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table with Customized Cells</title>
+    <style>
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid #444;
+            text-align: center;
+            padding: 10px;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        .pink-cell {
+            background-color: pink;
+            font-weight: bold;
+        }
+        .pink-box {
+            display: inline-block;
+            background-color: pink;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Table with Highlighted Cells</h1>
+    <table>
+        <tr>
+            <th>Region</th>
+            <th>Manager</th>
+            <th>Coordinator</th>
+            <th>Local Rep</th>
+            <th>Secretary</th>
+        </tr>
+        <tr>
+            <td>North</td>
+            <td>Adam</td>
+            <td>Beth</td>
+            <td>Callum</td>
+            <td>Diane</td>
+        </tr>
+        <tr>
+            <td>South West</td>
+            <td colspan="3" rowspan="3">Annie</td>
+            <td>Dodie</td>
+        </tr>
+        <tr>
+            <td class="pink-cell">South East Upper</td>
+            <td>Dylan</td>
+        </tr>
+        <tr>
+            <td>South East <span class="pink-box">Lower</span></td>
+            <td>Dahlia</td>
+        </tr>
+        <tr>
+            <td>East</td>
+            <td>Ash</td>
+            <td>Bill</td>
+            <td>Cecilia</td>
+            <td>Dave</td>
+        </tr>
+        <tr>
+            <td>West</td>
+            <td>Art</td>
+            <td>Bruce</td>
+            <td>Colin</td>
+            <td>Danny</td>
+        </tr>
+    </table>
+</body>
+</html>
